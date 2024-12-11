@@ -17,7 +17,7 @@ public class Ejemplo4AceptadorConexion {
                 System.out.println("Conexión aceptada");
 
                 OutputStream flujoSalida = socketDatos.getOutputStream();
-                PrintWriter salidaSocket = new PrintWriter(flujoSalida, true);
+                PrintWriter salidaSocket = new PrintWriter(flujoSalida, true); //corregir o verificar
                 salidaSocket.println(mensaje);
 
                 salidaSocket.flush();
